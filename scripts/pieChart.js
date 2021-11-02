@@ -3,7 +3,7 @@ let lang_count = [1,3]
 //let unique_languages = ["PL","EN"]
 
 async function checkLanguages(){
-    var apiUrl = 'https://my.api.mockaroo.com/users.json?key=d7b24450';
+    var apiUrl = 'https://my.api.mockaroo.com/users.json?key=cb21e350';
     return fetch(apiUrl).then(response => {
         return response.json();
     }).then(jsondata => {
@@ -34,7 +34,33 @@ async function checkLanguages(){
     
     
         console.log(unique_languages,998)
+        console.log(lang_count,999)
+
+        var next = true;
+
+        while(next){
+            var skip = true;
+            for (var i = 0; i < lang_count.length; i++){
+                if (lang_count[i] < lang_count[i+1]){
+                    temp = lang_count[i]
+                    lang_count[i] = lang_count[i+1]
+                    lang_count[i+1] = temp
+
+                    temp = unique_languages[i]
+                    unique_languages[i] = unique_languages[i+1]
+                    unique_languages[i+1] = temp
+                    skip = false;
+                }
+            }
+
+            if (skip){
+                next = false;
+            }
+
+        }
+
         console.log(lang_count,998)
+        console.log(unique_languages,998)
 
         
         const data = {labels: unique_languages,
