@@ -3,7 +3,7 @@ let lang_count = [1,3]
 //let unique_languages = ["PL","EN"]
 
 async function checkLanguages(){
-    var apiUrl = 'https://my.api.mockaroo.com/users.json?key=cb21e350';
+    var apiUrl = 'https://my.api.mockaroo.com/users.json?key=d7b24450';
     return fetch(apiUrl).then(response => {
         return response.json();
     }).then(jsondata => {
