@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "AAAA,AAAA,aAAa,CAAA;EACT,MAAM,EAAE,KACZ;CAAC",
     "sources": [
-        "../../scss/style-main.scss"
+        "../../scss/style-index.scss"
     ],
     "names": [],
-    "file": "style-main.css"
+    "file": "style-index.css"
 }
