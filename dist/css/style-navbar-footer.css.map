@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,CAAC,CAAA;EACG,MAAM,EAAC,CACX;CAAC",
+    "sources": [
+        "../../scss/style-navbar-footer.scss"
+    ],
+    "names": [],
+    "file": "style-navbar-footer.css"
+}
