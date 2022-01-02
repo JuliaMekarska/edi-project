@@ -1,4 +1,28 @@
 .page-content {
   height: 100vh;
 }
+
+.container {
+  display: inline-block;
+}
+
+.chart-info {
+  display: center;
+}
+
+.left-data {
+  float: left;
+}
+
+.right-data {
+  float: right;
+}
+
+.right-chart {
+  float: right;
+}
+
+.left-chart {
+  float: left;
+}
 /*# sourceMappingURL=style-wykresy.css.map */

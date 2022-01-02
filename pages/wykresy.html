@@ -1,27 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="../dist/css/style-wykresy.css">
-    <link rel="stylesheet" href="../dist/css/style-navbar-footer.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<navbar>Navbar</navbar>
-<body>
-    <div class="page-content">
-        Treść strony
-        <a href="index.html">index (główna strona)</a>
+  <head>
+    <link rel="stylesheet" href="../dist/css/style-wykresy.css" />
+    <link rel="stylesheet" href="../dist/css/style-navbar-footer.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Charts</title>
+  </head>
+  <navbar>
+    <ul>
+      <li class="nav"><a href="index.html">Home</a></li>
+      <li class="nav"><a href="wykresy.html">Charts</a></li>
+    </ul>
+  </navbar>
+  <body>
+    <div class="chart-info">
+      <h1>
+        Pierwszy wykres zawiera informacje na temat<br />
+        języków opanowanych przez użytkowników strony.
+      </h1>
     </div>
-</body>
+    <div class="container">
+      <div class="right-chart">
+        <img
+          src="https://psy-pies.com/pliki/image/foto/duze/foto5923fd0d42dc2.jpg"
+        />
+      </div>
+      <div class="left-data">
+        <p>Liczba osób znająca język:</p>
+        <ul>
+          <li>niemiecki -</li>
+          <li>polski -</li>
+          <li>hiszpański -</li>
+          <li>włoski -</li>
+          <li>niemiecki -</li>
+          <li>holenderski -</li>
+          <li>angielski -</li>
+          <li>francuski -</li>
+        </ul>
+      </div>
+    </div>
+    <div class="chart-info">
+      <h1>
+        Następny wykres przedstawia liczbę mieszkańców<br />
+        poszczególnych miast.
+      </h1>
+    </div>
+    <div class="container">
+      <div class="left-chart">
+        <img
+          src="https://psy-pies.com/pliki/image/foto/duze/foto5923fd0d42dc2.jpg"
+        />
+      </div>
+      <div class="right-data">
+        <p>Liczba osób zamieszkująca:</p>
+        <ul>
+          <li>Rzeszów -</li>
+          <li>Sopot -</li>
+          <li>Katowice -</li>
+          <li>Warszawa -</li>
+          <li>Zamość -</li>
+          <li>Gdańsk -</li>
+          <li>Poznań -</li>
+          <li>Kraków -</li>
+          <li>Sanok -</li>
+        </ul>
+      </div>
+    </div>
+    <div class="chart-info">
+      <h1>
+        Wykres trzeci informuje o wieku<br />
+        każdego z użytkowników strony.<br />
+        Wartości zajmują się w przedziale<br />
+        między 18, a 61 latami.
+      </h1>
+    </div>
+    <div class="container">
+      <div class="right-chart">
+        <img
+          src="https://psy-pies.com/pliki/image/foto/duze/foto5923fd0d42dc2.jpg"
+        />
+      </div>
+      <div class="left-data">
+        <p>Liczba osób w wieku:</p>
+        <ul>
+          <li>61 lat - 1</li>
+          <li>18 lat - 4</li>
+        </ul>
+      </div>
+    </div>
+    <div class="chart-info">
+      <h1>
+        Wykres czwarty przedstawia liczbę uzytkowników<br />
+        zatrudnionych oraz bezrobotnych.
+      </h1>
+    </div>
+    <div class="container">
+      <div class="left-chart">
+        <img
+          src="https://psy-pies.com/pliki/image/foto/duze/foto5923fd0d42dc2.jpg"
+        />
+      </div>
+      <div class="right-data">
+        <p>Liczba osób:</p>
+        <ul>
+          <li>Zatrudnionych -</li>
+          <li>Bezrobotnych -</li>
+        </ul>
+      </div>
+    </div>
+    <div class="chart-info">
+      <h1>
+        Ostatni wykres przedstawia liczbę<br />
+        użytkowników o konkretnych stopniach wykształcenia, <br />
+        takich jak: wyższe, średnie,<br />
+        gimnazjalne oraz podstawowe.
+      </h1>
+    </div>
+    <div class="container">
+      <div class="right-chart">
+        <img
+          src="https://psy-pies.com/pliki/image/foto/duze/foto5923fd0d42dc2.jpg"
+        />
+      </div>
+      <div class="left-data">
+        <p>Liczba osób z wykształceniem:</p>
+        <ul>
+          <li>Wyższym -</li>
+          <li>Średnim -</li>
+          <li>Gimnazjalnym -</li>
+          <li>Podstawowym -</li>
+        </ul>
+      </div>
+    </div>
+  </body>
 
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Ładowanie potrzebnych plików bibliotek itp-->
+  <script src="../scripts/Charts.js"></script>
+  <!-- Ładowanie informacji do wyświetlania-->
+  <script src="../scripts/sortData.js"></script>
 
-        
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Ładowanie potrzebnych plików bibliotek itp-->
-<script src="../scripts/Charts.js"></script> <!-- Ładowanie informacji do wyświetlania-->
-<script src="../scripts/sortData.js"></script> 
-
-
-<footer>Footer</footer>
+  <footer>
+    <div class="box1">
+      <ul>
+        <li><a href="index.html">About</a></li>
+        <li><a href="wykresy.html">Data</a></li>
+      </ul>
+    </div>
+    <div class="box2">
+      <ul>
+        <p>Contact</p>
+        <li>s221455@student.uek.krakow.pl</li>
+        <li>s221455@student.uek.krakow.pl</li>
+        <li>s221455@student.uek.krakow.pl</li>
+      </ul>
+    </div>
+    <div class="box3">
+      <a href="https://uek.krakow.pl/"
+        ><img
+          class="icon"
+          src="https://sg-cdn.uek.krakow.pl/thumbnail/article_full/page/c68033f8-cc4d-43e6-b2f6-da3755493b24/pl/pieczec_rektorska_bordo_pl.jpg"
+          width="50px"
+        />
+        <span>Odwiedź naszą uczelnię</span>
+      </a>
+    </div>
+  </footer>
 </html>
