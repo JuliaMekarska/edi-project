@@ -3,7 +3,7 @@ async function loadData(){
     let language_array = [];
     let age_array = [];
     let city_array = [];
-    let job_array = [];
+    let is_employed_array = [];
     let education_array = [];
 
     var apiUrl = 'https://my.api.mockaroo.com/users.json?key=d7b24450'; //link do mockaroo
@@ -15,14 +15,14 @@ async function loadData(){
             language_array.push(item.language) //json => tablica (array)
             age_array.push(item.age)
             city_array.push(item.city)
-            job_array.push(item.job)
+            is_employed_array.push(item.is_employed)
             education_array.push(item.education)
         })
 
         languages = sort(language_array) //sortowanie
-        age = sort(age_array)
+        age = sortList(age_array)
         city = sort(city_array)
-        job = sort(job_array)
+        is_employed = sort(is_employed_array)
         education = sort(education_array)
 
         let config = getData()
@@ -30,6 +30,8 @@ async function loadData(){
         const pieChartLang = new Chart(document.getElementById('pieChart').getContext('2d'),config.language)
         const pieChartCity = new Chart(document.getElementById('myChart').getContext('2d'),config.city)
         const lineChartAge = new Chart(document.getElementById('lineChart').getContext('2d'),config.age)
+        const barChartEmployed = new Chart(document.getElementById('barChart').getContext('2d'),config.is_employed)
+        const barChartEducation = new Chart(document.getElementById('barChart2').getContext('2d'),config.education)
     
     }).catch(err => {
         // Do something for an error here
