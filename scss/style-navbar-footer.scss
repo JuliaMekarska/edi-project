@@ -1,3 +1,29 @@
-*{
-    margin:0
+$olive : #556B2F;
+$light : #f7f7f7;
+$dark : #222121;
+$blue : #0A1172;
+
+%align-center {
+    display:flex;
+    align-items: center;
+}
+
+.navbar {
+    background-image: url(geometric-leaves.png);
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem calc((100vw-1200px) /2);
+    z-index:10;
+    position:relative;
+    
+    &_logo {
+        color: $dark;
+        cursor:pointer;
+        text-decoration: none;
+        font-size: 2rem;
+        margin-left: 24 px;
+        @extend %align-center;
+
+    }
 }
