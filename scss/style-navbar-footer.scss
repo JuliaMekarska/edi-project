@@ -52,3 +52,32 @@ $blue : #0A1172;
         }
     }   
 }
+
+.footer{
+    background-color: $light;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem calc((100vw-1200px) /2);
+    z-index:10;
+    position:relative;
+
+    &_menu {
+        @extend %align-center;
+        list-style: none;
+        text-align: center;
+        margin-right: 24px;
+    }
+    &--link {
+        color: $dark;
+        @extend %align-center;
+        justify-content: center;
+        text-decoration: none;
+        padding: 0 1rem;
+        
+        &:hover {
+            color: $olive;
+            transition: all 0.3s ease;
+        }
+    }   
+}
