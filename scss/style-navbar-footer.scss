@@ -26,4 +26,22 @@ $blue : #0A1172;
         @extend %align-center;
 
     }
+    &_menu {
+        @extend %align-center;
+        list-style: none;
+        text-align: center;
+        margin-right: 24px;
+    }
+    &--link {
+        color: $dark;
+        @extend %align-center;
+        justify-content: center;
+        text-decoration: none;
+        padding: 0 1rem;
+        
+        &:hover {
+            color: $olive;
+            transition: all 0.3s ease;
+        }
+    }   
 }
