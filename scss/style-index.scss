@@ -1,6 +1,56 @@
+@import 'style-navbar-footer';
+
+$olive : #556B2F;
+$light : #f7f7f7;
+$dark : #222121;
+$blue : #0A1172;
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
+}
 .page-content{
     height: 100vh;
     margin-bottom: 70px;
-    @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
-    
+
+    .hero {
+        background-color: $light;
+      
+        &__container {
+          display:flex;
+          align-items:center;
+          justify-items:center;
+          margin:0 auto;
+          height: 90vh;
+          z-index:1;
+          width: 100%;
+          max-width: 1200px;
+          padding-right: 24 px;
+          padding-left: 24 px;
+      
+        }
+      
+        &--left {
+          width: 100%;
+          line-height: 1.2;
+        }
+      
+        &--left h1{
+          font-size:2rem;
+          color: $olive;
+        }
+        &--left h2{
+          font-size:2rem;
+          color: $blue;
+        }
+        &--left p{
+          font-size:1rem;
+          margin-top:0.5rem;
+          color: $dark;
+          font-weight: 700;
+        }
+      }
+      
 }
