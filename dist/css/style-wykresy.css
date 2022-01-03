@@ -86,6 +86,11 @@
   transition: all 0.3s ease;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
 .page-content {
   height: 100vh;
 }
