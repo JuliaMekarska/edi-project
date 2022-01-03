@@ -1,28 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap");
+.navbar_logo, .navbar_menu, .navbar--link, .footer_menu, .footer--link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar {
+  background-color: #f7f7f7;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.5rem calc((100vw-1200px) /2);
+  z-index: 10;
+  position: relative;
+}
+
+.navbar_logo {
+  color: #222121;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  margin-left: 24 px;
+}
+
+.navbar_menu {
+  list-style: none;
+  text-align: center;
+  margin-right: 24px;
+}
+
+.navbar--link {
+  color: #222121;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  padding: 0 1rem;
+}
+
+.navbar--link:hover {
+  color: #556B2F;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.footer {
+  background-color: #f7f7f7;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.5rem calc((100vw-1200px) /2);
+  z-index: 10;
+  position: relative;
+}
+
+.footer_menu {
+  list-style: none;
+  text-align: center;
+  margin-right: 24px;
+}
+
+.footer--link {
+  color: #222121;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  padding: 0 1rem;
+}
+
+.footer--link:hover {
+  color: #556B2F;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
 .page-content {
   height: 100vh;
-}
-
-.container {
-  display: inline-block;
-}
-
-.chart-info {
-  display: center;
-}
-
-.left-data {
-  float: left;
-}
-
-.right-data {
-  float: right;
-}
-
-.right-chart {
-  float: right;
-}
-
-.left-chart {
-  float: left;
 }
 /*# sourceMappingURL=style-wykresy.css.map */
