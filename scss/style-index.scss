@@ -51,6 +51,10 @@ $blue : #0A1172;
           color: $dark;
           font-weight: 700;
         }
+        &--img {
+            height: 100%;
+            width: 100%;
+        }
       }
       
 }
