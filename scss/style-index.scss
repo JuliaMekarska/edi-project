@@ -4,7 +4,7 @@
 @import url('http://fonts.googleapis.com/css?family=Oxygen&subset=latin,latin-ext');
 
 $olive : #556B2F;
-$light : #f7f7f7;
+$light : #f3f3f3;
 $dark : #222121;
 $blue : #0A1172;
 
@@ -17,9 +17,9 @@ $blue : #0A1172;
 }
 .page-content{
     height: 100vh;
+    background-color: $light;
 
     .hero {
-        background-color: $light;
         display: flex;
       
         &__container {

@@ -47,7 +47,7 @@
 }
 
 .navbar--link:hover {
-  color: #556B2F;
+  color: #d4dfc0;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -84,7 +84,7 @@
 }
 
 .footer--link:hover {
-  color: #556B2F;
+  color: #d4dfc0;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -108,10 +108,10 @@
 
 .page-content {
   height: 100vh;
+  background-color: #f3f3f3;
 }
 
 .page-content .hero {
-  background-color: #f7f7f7;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

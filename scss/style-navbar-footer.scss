@@ -1,8 +1,8 @@
 
  @import url('http://fonts.googleapis.com/css?family=Oxygen&subset=latin,latin-ext');
 
-$olive : #556B2F;
-$light : #f7f7f7;
+$olive : #d4dfc0;
+$light : #f3f3f3;
 $dark : #222121;
 $blue : #0A1172;
 
@@ -56,7 +56,7 @@ $blue : #0A1172;
     align-items: center;
     width:  100%;
     height: 80px;
-    margin-left: 15px;
+    position:relative;
     
     
     &_menu {
@@ -82,5 +82,17 @@ $blue : #0A1172;
       }
       .col {
         padding:0;
+        p{
+            padding:2px;
+        }
+        dt{
+            margin-top: 2px;
+
+            &:hover {
+                color: $olive;
+                transition: all 0.3s ease;
+            }
+        }
+        
       }  
 }

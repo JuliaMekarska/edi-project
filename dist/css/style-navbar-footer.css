@@ -46,7 +46,7 @@
 }
 
 .navbar--link:hover {
-  color: #556B2F;
+  color: #d4dfc0;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -64,7 +64,7 @@
           align-items: center;
   width: 100%;
   height: 80px;
-  margin-left: 15px;
+  position: relative;
 }
 
 .footer_menu {
@@ -83,7 +83,7 @@
 }
 
 .footer--link:hover {
-  color: #556B2F;
+  color: #d4dfc0;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -95,5 +95,19 @@
 
 .footer .col {
   padding: 0;
+}
+
+.footer .col p {
+  padding: 2px;
+}
+
+.footer .col dt {
+  margin-top: 2px;
+}
+
+.footer .col dt:hover {
+  color: #d4dfc0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 /*# sourceMappingURL=style-navbar-footer.css.map */
