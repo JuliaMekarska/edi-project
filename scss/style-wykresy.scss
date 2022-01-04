@@ -16,15 +16,17 @@ $blue : #0A1172;
     font-family: 'Oxygen', sans-serif; 
 }
 
+
 .chart-info {
-    margin-top: 20px;
-    margin-bottom: 20px;
     text-align: center;
     justify-content: center;
     color:$dark;
+    background-color: $light;
 }
 
 .chart {
+  
+  background-color: $light;
   
     &-container {
         display:flex;
