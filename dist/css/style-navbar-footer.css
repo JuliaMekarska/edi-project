@@ -98,11 +98,15 @@
 }
 
 .footer .col p {
+  text-align: center;
+  margin-top: 10px;
   padding: 2px;
+  font-weight: 700;
 }
 
 .footer .col dt {
   margin-top: 2px;
+  margin-bottom: 3px;
 }
 
 .footer .col dt:hover {

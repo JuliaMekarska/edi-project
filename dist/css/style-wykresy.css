@@ -1,4 +1,5 @@
 @import url("http://fonts.googleapis.com/css?family=Oxygen&subset=latin,latin-ext");
+@import url("http://fonts.googleapis.com/css?family=Oxygen&subset=latin,latin-ext");
 .navbar_logo, .navbar_menu, .navbar--link, .footer_menu, .footer--link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -46,7 +47,7 @@
 }
 
 .navbar--link:hover {
-  color: #556B2F;
+  color: #d4dfc0;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -64,7 +65,7 @@
           align-items: center;
   width: 100%;
   height: 80px;
-  margin-left: 15px;
+  position: relative;
 }
 
 .footer_menu {
@@ -83,7 +84,7 @@
 }
 
 .footer--link:hover {
-  color: #556B2F;
+  color: #d4dfc0;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -94,15 +95,103 @@
 }
 
 .footer .col {
-  padding: 20px;
+  padding: 0;
+}
+
+.footer .col p {
+  text-align: center;
+  margin-top: 10px;
+  padding: 2px;
+  font-weight: 700;
+}
+
+.footer .col dt {
+  margin-top: 2px;
+  margin-bottom: 3px;
+}
+
+.footer .col dt:hover {
+  color: #d4dfc0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 * {
-  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
+  padding: 0;
+  font-family: 'Oxygen', sans-serif;
 }
 
-.page-content {
-  height: 100vh;
+.chart-info {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #222121;
+}
+
+.chart-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: space-between;
+  margin: 0 auto;
+  height: 90vh;
+  z-index: 1;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.chart-container-text {
+  text-align: left;
+  margin-left: 3rem;
+  width: 100%;
+  line-height: 1.2;
+}
+
+.chart-container-text p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 2px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.chart-container-text dt {
+  margin-top: 2px;
+  margin-bottom: 3px;
+}
+
+.chart-container-img {
+  height: 100%;
+  width: 100%;
+}
+
+.chart-container-text-swap {
+  text-align: right;
+  width: 100%;
+  line-height: 1.2;
+}
+
+.chart-container-text-swap p {
+  margin-right: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 2px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.chart-container-text-swap dt {
+  margin-right: 20rem;
+  margin-top: 2px;
+  margin-bottom: 3px;
 }
 /*# sourceMappingURL=style-wykresy.css.map */

@@ -25,12 +25,12 @@ $blue : #0A1172;
         &__container {
           display:flex;
           align-items:center;
-          justify-items:center;
+          justify-items: space-between;
           margin:0 auto;
           height: 90vh;
           z-index:1;
           width: 100%;
-          max-width: 1000px;
+          max-width: 1200px;
 
           &--left {
             width: 100%;
@@ -47,12 +47,15 @@ $blue : #0A1172;
             font-size:2rem;
             color: $blue;
             margin-bottom: 25px;
+            margin-left: 40px;
           }
           &--left p{
             font-size:1rem;
             margin-top:1rem;
             color: $dark;
             font-weight: 700;
+            font-style: oblique;
+            text-align: justify;
           }
           &--right {
             text-align: center;
@@ -62,8 +65,8 @@ $blue : #0A1172;
           &--img {
             margin: 0 0 20px 0;
             flex: 1;
-            height: 50%;
-            width: 50%;
+            height: 100%;
+            width: 100%;
             padding: 20px;
             
           }
