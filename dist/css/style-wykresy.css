@@ -125,13 +125,16 @@
 }
 
 .chart-info {
-  margin-top: 20px;
-  margin-bottom: 20px;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   color: #222121;
+  background-color: #f3f3f3;
+}
+
+.chart {
+  background-color: #f3f3f3;
 }
 
 .chart-container {
