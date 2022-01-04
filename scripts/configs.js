@@ -5,20 +5,26 @@ function getData(){
         label: '# of Votes',
         data: languages.count,
         backgroundColor: [
-            'rgba(255, 99, 132, 0.2)',
-            'rgba(54, 162, 235, 0.2)',
-            'rgba(255, 206, 86, 0.2)',
-            'rgba(75, 192, 192, 0.2)',
-            'rgba(153, 102, 255, 0.2)',
-            'rgba(255, 159, 64, 0.2)'
+           '#7f4f24',
+           '#936639',
+           '#a68a64',
+           '#c2c5aa',
+           '#a4ac86',
+           '#656d4a',
+           '#414833'
+
+
         ],
         borderColor: [
-            'rgba(255, 99, 132, 1)',
-            'rgba(54, 162, 235, 1)',
-            'rgba(255, 206, 86, 1)',
-            'rgba(75, 192, 192, 1)',
-            'rgba(153, 102, 255, 1)',
-            'rgba(255, 159, 64, 1)'
+            '582f0e',
+            '#7f4f24',
+            '#936639',
+            '#a68a64',
+            '#656d4a',
+            '#414833',
+            '#333d29'
+
+            
         ],
         borderWidth: 2
         }]
@@ -39,20 +45,26 @@ const city_data = {labels: city.items,
     label: '# of Votes',
     data: city.count,
     backgroundColor: [
-        'rgba(255, 99, 132, 0.2)',
-        'rgba(54, 162, 235, 0.2)',
-        'rgba(255, 206, 86, 0.2)',
-        'rgba(75, 192, 192, 0.2)',
-        'rgba(153, 102, 255, 0.2)',
-        'rgba(255, 159, 64, 0.2)'
+        '#9b9b7a',
+        '#baa587',
+        '#d9ae94',
+        '#f1dca7',
+        '#ffcb69',
+        '#e8ac65',
+        '#d08c60',
+        '#b58463',
+        '#997b66'
     ],
     borderColor: [
-        'rgba(255, 99, 132, 1)',
-        'rgba(54, 162, 235, 1)',
-        'rgba(255, 206, 86, 1)',
-        'rgba(75, 192, 192, 1)',
-        'rgba(153, 102, 255, 1)',
-        'rgba(255, 159, 64, 1)'
+        '#5e503f',
+        '#9b9b7a',
+        '#baa587',
+        '#d9ae94',
+        '#e8ac65',
+        '#d08c60',
+        '#b58463',
+        '#774936'
+        
     ],
     borderWidth: 2
     }]
@@ -75,20 +87,17 @@ const age_data = {labels: age.items,
     label: 'Occurrences',
     data: age.count,
     backgroundColor: [
-        'rgba(255, 99, 132, 0.2)',
-        'rgba(54, 162, 235, 0.2)',
-        'rgba(255, 206, 86, 0.2)',
-        'rgba(75, 192, 192, 0.2)',
-        'rgba(153, 102, 255, 0.2)',
-        'rgba(255, 159, 64, 0.2)'
+        '#ff5400',
+        '#7400b8',
+        '#00b4d8',
+        '#ef476f',
+        '#caffbf',
+        '#d4a276',
+        '#ffd60a'
+
     ],
     borderColor: [
-        'rgba(255, 99, 132, 1)',
-        'rgba(54, 162, 235, 1)',
-        'rgba(255, 206, 86, 1)',
-        'rgba(75, 192, 192, 1)',
-        'rgba(153, 102, 255, 1)',
-        'rgba(255, 159, 64, 1)'
+        '#03045e',
     ],
     borderWidth: 2
     }]
@@ -112,20 +121,12 @@ const employment_data = {labels: is_employed.items,
     label: 'Occurrences',
     data: is_employed.count,
     backgroundColor: [
-        'rgba(255, 99, 132, 0.2)',
-        'rgba(54, 162, 235, 0.2)',
-        'rgba(255, 206, 86, 0.2)',
-        'rgba(75, 192, 192, 0.2)',
-        'rgba(153, 102, 255, 0.2)',
-        'rgba(255, 159, 64, 0.2)'
+        '#90a955',
+        '#31572c'
     ],
     borderColor: [
-        'rgba(255, 99, 132, 1)',
-        'rgba(54, 162, 235, 1)',
-        'rgba(255, 206, 86, 1)',
-        'rgba(75, 192, 192, 1)',
-        'rgba(153, 102, 255, 1)',
-        'rgba(255, 159, 64, 1)'
+        '#4f772d',
+        '#132a13'
     ],
     borderWidth: 2
     }]
@@ -150,20 +151,16 @@ const education_data = {labels: education.items,
     label: 'Wykształcenie',
     data: education.count,
     backgroundColor: [
-        'rgba(255, 99, 132, 0.2)',
-        'rgba(54, 162, 235, 0.2)',
-        'rgba(255, 206, 86, 0.2)',
-        'rgba(75, 192, 192, 0.2)',
-        'rgba(153, 102, 255, 0.2)',
-        'rgba(255, 159, 64, 0.2)'
+        '#d5896f',
+        '#dab785',
+        '#70a288',
+        '#04395e'
     ],
     borderColor: [
-        'rgba(255, 99, 132, 1)',
-        'rgba(54, 162, 235, 1)',
-        'rgba(255, 206, 86, 1)',
-        'rgba(75, 192, 192, 1)',
-        'rgba(153, 102, 255, 1)',
-        'rgba(255, 159, 64, 1)'
+        '#f15152',
+        '#edb183',
+        '#566e3d',
+        '#031d44'
     ],
     borderWidth: 2
     }]
