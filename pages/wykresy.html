@@ -10,148 +10,197 @@
   </head>
 
   <body>
-
     <nav class="navbar">
-      <a href='/' class='navbar_logo'> 🍃 PROJEKT GRUPOWY </a>
-         <div class="navbar_menu">
-          <a href="index.html" class='navbar--link'>Home</a>
-          <a href="wykresy.html" class='navbar--link'>Charts</a>
-         </div>
+      <a href="/" class="navbar_logo"> 🍃 PROJEKT GRUPOWY </a>
+      <div class="navbar_menu">
+        <a href="index.html" class="navbar--link">Home</a>
+        <a href="wykresy.html" class="navbar--link">Charts</a>
+      </div>
     </nav>
-    
-      <div class="chart-info">
-        <h1>
-          Pierwszy wykres zawiera informacje na temat<br />
-          języków opanowanych przez użytkowników strony.
-        </h1>
-      </div>
 
-      <div class='chart'>
-        <div class='chart-container'>
-            <div class='chart-container-text'>
-              <p>Liczba osób znających język:</p>
-              <dl>
-                <dt>niemiecki -</dt>
-                <dt>polski -</dt>
-                <dt>hiszpański -</dt>
-                <dt>włoski -</dt>
-                <dt>niemiecki -</dt>
-                <dt>holenderski -</dt>
-                <dt>angielski -</dt>
-                <dt>francuski -</dt>
-              </dl>  
-            </div>
-            <div class='chart-container-image'>
-                <img
-                src="https://psy-pies.com/pliki/image/foto/duze/foto5923fd0d42dc2.jpg"
-                alt="wykres"
-                class="container--chart"  
-              />
-            </div>
+    <div class="chart-info">
+      <h1>
+        Pierwszy wykres zawiera informacje na temat<br />
+        języków opanowanych przez użytkowników strony.
+      </h1>
+    </div>
+
+    <div class="chart">
+      <div class="chart-container">
+        <div class="chart-container-text">
+          <p>Liczba osób znających język:</p>
+          <dl>
+            <dt>
+              <span id="lang-name-1"></span> - <span id="lang-val-1"></span>
+            </dt>
+            <dt>
+              <span id="lang-name-2"></span> - <span id="lang-val-2"></span>
+            </dt>
+            <dt>
+              <span id="lang-name-3"></span> - <span id="lang-val-3"></span>
+            </dt>
+            <dt>
+              <span id="lang-name-4"></span> - <span id="lang-val-4"></span>
+            </dt>
+            <dt>
+              <span id="lang-name-5"></span> - <span id="lang-val-5"></span>
+            </dt>
+            <dt>
+              <span id="lang-name-6"></span> - <span id="lang-val-6"></span>
+            </dt>
+            <dt>
+              <span id="lang-name-7"></span> - <span id="lang-val-7"></span>
+            </dt>
+            <dt>
+              <span id="lang-name-8"></span> - <span id="lang-val-8"></span>
+            </dt>
+          </dl>
         </div>
-      </div>
-      
-      <div class="chart-info">
-        <h1>
-          Następny wykres przedstawia liczbę mieszkańców poszczególnych miast.
-        </h1>
-      </div>
-
-      <div class='chart'>
-        <div class='chart-container'>
-            <div class='chart-container-image'>
-              <img
-              src="https://psy-pies.com/pliki/image/foto/duze/foto5923fd0d42dc2.jpg"
-              alt="wykres"
-              class="container--chart"  
-              />
-            </div>
-            <div class='chart-container-text-swap'>
-              <p>Liczba osób zamieszkujących:</p>
-              <dl>
-                <dt>Rzeszów -</dt>
-                <dt>Sopot -</dt>
-                <dt>Katowice -</dt>
-                <dt>Warszawa -</dt>
-                <dt>Zamość -</dt>
-                <dt>Gdańsk -</dt>
-                <dt>Poznań -</dt>
-                <dt>Kraków -</dt>
-                <dt>Sanok -</dt>
-              </dl>  
-            </div>
-        </div>
-      </div>
-      
-      <div class="chart-info">
-        <h1>
-          Wykres trzeci informuje o wieku każdego z użytkowników strony.<br />
-          Wartości zajmują się w przedziale między 18 a 61 lat.
-        </h1>
-      </div>
-
-      <div class='chart'>
-        <div class='chart-container'>
-            <div class='chart-container-text'>
-              <p>Liczba osób w wieku:</p>
-              <dl>
-                <dt>61 lat - 1</dt>
-                <dt>18 lat - 4</dt>
-              </dl>
-            </div>
-            <div class='chart-container-image'>
-            <img
+        <div class="chart-container-image" id="language-chart">
+          <img
             src="https://psy-pies.com/pliki/image/foto/duze/foto5923fd0d42dc2.jpg"
             alt="wykres"
-            class="container--chart"  
-            />
-            </div>
+            class="container--chart"
+          />
         </div>
       </div>
+    </div>
 
-      <div class="chart-info">
-        <h1>
-          Wykres czwarty przedstawia liczbę użytkowników<br />
-          zatrudnionych oraz bezrobotnych.
-        </h1>
-      </div>
+    <div class="chart-info">
+      <h1>
+        Następny wykres przedstawia liczbę mieszkańców poszczególnych miast.
+      </h1>
+    </div>
 
-      <div class='chart'>
-        <div class='chart-container'>
-            <div class='chart-container-image'>
-              <img
-              src="https://psy-pies.com/pliki/image/foto/duze/foto5923fd0d42dc2.jpg"
-              alt="wykres"
-              class="container--chart"  
-              />
-            </div>
-            <div class='chart-container-text-swap'>
-              <p>Liczba osób:</p>
-              <dl>
-                <dt>Zatrudnionych -</dt>
-                <dt>Bezrobotnych -</dt>
-              </dl> 
-            </div>
+    <div class="chart">
+      <div class="chart-container">
+        <div class="chart-container-image" id="city-chart">
+          <img
+            src="https://psy-pies.com/pliki/image/foto/duze/foto5923fd0d42dc2.jpg"
+            alt="wykres"
+            class="container--chart"
+          />
+        </div>
+        <div class="chart-container-text-swap">
+          <p>Liczba osób zamieszkujących:</p>
+          <dl>
+            <dt>
+              <span id="city-name-1"></span> - <span id="city-val-1"></span>
+            </dt>
+            <dt>
+              <span id="city-name-2"></span> - <span id="city-val-2"></span>
+            </dt>
+            <dt>
+              <span id="city-name-3"></span> - <span id="city-val-3"></span>
+            </dt>
+            <dt>
+              <span id="city-name-4"></span> - <span id="city-val-4"></span>
+            </dt>
+            <dt>
+              <span id="city-name-5"></span> - <span id="city-val-5"></span>
+            </dt>
+            <dt>
+              <span id="city-name-6"></span> - <span id="city-val-6"></span>
+            </dt>
+            <dt>
+              <span id="city-name-7"></span> - <span id="city-val-7"></span>
+            </dt>
+            <dt>
+              <span id="city-name-8"></span> - <span id="city-val-8"></span>
+            </dt>
+            <dt>
+              <span id="city-name-9"></span> - <span id="city-val-9"></span>
+            </dt>
+          </dl>
         </div>
       </div>
+    </div>
 
-      <div class="chart-info">
-        <h1>
-          Ostatni wykres przedstawia liczbę użytkowników o konkretnych stopniach wykształcenia, <br />
-          takich jak: wyższe, średnie, gimnazjalne oraz podstawowe.
-        </h1>
+    <div class="chart-info">
+      <h1>
+        Wykres trzeci informuje o wieku każdego z użytkowników strony.<br />
+      </h1>
+    </div>
+
+    <div class="chart">
+      <div class="chart-container">
+        <div class="chart-container-text">
+          <p>
+            Struktura zawiera informacje na temat liczby<br />
+            osób w danym wieku. Można z niej odczytać konkretny<br />
+            przedział wiekowy w jaki wpasowują się użytkownicy.
+          </p>
+        </div>
+        <div class="chart-container-image" id="age-chart">
+          <img
+            src="https://psy-pies.com/pliki/image/foto/duze/foto5923fd0d42dc2.jpg"
+            alt="wykres"
+            class="container--chart"
+          />
+        </div>
       </div>
+    </div>
 
+    <div class="chart-info">
+      <h1>
+        Wykres czwarty przedstawia liczbę użytkowników<br />
+        zatrudnionych oraz bezrobotnych.
+      </h1>
+    </div>
 
+    <div class="chart">
+      <div class="chart-container">
+        <div class="chart-container-image" id="work-chart">
+          <img
+            src="https://psy-pies.com/pliki/image/foto/duze/foto5923fd0d42dc2.jpg"
+            alt="wykres"
+            class="container--chart"
+          />
+        </div>
+        <div class="chart-container-text-swap">
+          <p>Liczba osób:</p>
+          <dl>
+            <span id="work-stat-1"></span> - <span id="work-val-1"></span>
+            <span id="work-stat-2"></span> - <span id="work-val-2"></span>
+          </dl>
+        </div>
+      </div>
+    </div>
 
+    <div class="chart-info">
+      <h1>
+        Ostatni wykres przedstawia liczbę użytkowników o konkretnych stopniach
+        wykształcenia, <br />
+        takich jak: wyższe, średnie, gimnazjalne oraz podstawowe.
+      </h1>
+    </div>
 
-    
+    <div class="chart">
+      <div class="chart-container">
+        <div class="chart-container-text">
+          <p>Liczba osób z wykształceniem:</p>
+          <dl>
+            <span id="edu-lv-1"></span> - <span id="edu-val-1"></span>
+            <span id="edu-lv-2"></span> - <span id="edu-val-2"></span>
+            <span id="edu-lv-3"></span> - <span id="edu-val-3"></span>
+            <span id="edu-lv-4"></span> - <span id="edu-val-4"></span>
+          </dl>
+        </div>
+        <div class="chart-container-image" id="age-chart">
+          <img
+            src="https://psy-pies.com/pliki/image/foto/duze/foto5923fd0d42dc2.jpg"
+            alt="wykres"
+            class="container--chart"
+          />
+        </div>
+      </div>
+    </div>
+
     <div class="footer">
-
       <div class="col">
-        <div class='footer_menu'>
-          <a href="index.html" class='footer--link'>Home</a>
-          <a href="wykresy.html" class='footer--link'>Charts</a>
+        <div class="footer_menu">
+          <a href="index.html" class="footer--link">Home</a>
+          <a href="wykresy.html" class="footer--link">Charts</a>
         </div>
       </div>
 
@@ -165,16 +214,16 @@
       </div>
 
       <div class="col">
-        <a href="https://uek.krakow.pl/" class='footer--link'>
+        <a href="https://uek.krakow.pl/" class="footer--link">
           <img
-          class="icon"
-          src="https://sg-cdn.uek.krakow.pl/thumbnail/article_full/page/c68033f8-cc4d-43e6-b2f6-da3755493b24/pl/pieczec_rektorska_bordo_pl.jpg"
-          width="50px"
-        />
+            class="icon"
+            src="https://sg-cdn.uek.krakow.pl/thumbnail/article_full/page/c68033f8-cc4d-43e6-b2f6-da3755493b24/pl/pieczec_rektorska_bordo_pl.jpg"
+            width="50px"
+          />
 
-          Odwiedź naszą uczelnię!</a>
+          Odwiedź naszą uczelnię!</a
+        >
       </div>
-
     </div>
-  </body>  
+  </body>
 </html>
