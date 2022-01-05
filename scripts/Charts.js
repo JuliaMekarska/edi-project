@@ -19,7 +19,7 @@ async function loadData(){
             education_array.push(item.education)
         })
 
-        languages = sort(language_array) //sortowanie
+        languages = sort(language_array) //sortowanie, zwraca słownik np. languages.items i langages.count
         age = sortList(age_array)
         city = sort(city_array)
         is_employed = sort(is_employed_array)
@@ -27,7 +27,9 @@ async function loadData(){
 
         let config = getData()
 
-        const pieChartLang = new Chart(document.getElementById('pieChart').getContext('2d'),config.language)
+        toHtml(languages,"lang")
+
+        const pieChartLang = new Chart(document.getElementById('language-chart').getContext('2d'),config.language)
         const pieChartCity = new Chart(document.getElementById('myChart').getContext('2d'),config.city)
         const lineChartAge = new Chart(document.getElementById('lineChart').getContext('2d'),config.age)
         const barChartEmployed = new Chart(document.getElementById('barChart').getContext('2d'),config.is_employed)
