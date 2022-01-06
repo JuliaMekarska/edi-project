@@ -21,6 +21,8 @@ $blue : #0A1172;
     text-align: center;
     justify-content: center;
     color:$dark;
+    margin-left: 3rem;
+    margin-right: 3rem;
     
 }
 .main{
@@ -28,6 +30,7 @@ $blue : #0A1172;
 }
 .chart {
   margin-left: 3rem;
+  margin-right: 3rem;
   
   background-color: $light;
   
@@ -43,14 +46,21 @@ $blue : #0A1172;
         &-box{
           position: relative;
           height: 80% !important; 
-          width: 100%!important;
+          max-width: 100% !important;
+          width: 70vw;
         }
+
+        &-bool{
+          width: 40vw;
+        }
+
     
         &-text {
         text-align: left;
         line-height: 1.2;
-        min-width: 300px;
-        margin-right: 3rem;
+        min-width: 20vw;
+        margin-left:2rem;
+        
 
         p{
           margin-top:10px;
@@ -61,6 +71,7 @@ $blue : #0A1172;
           font-size: 1.8rem;
           border-bottom: 2px solid $olive;
           padding-bottom: 1rem;
+          margin-right:2rem;
         }
         dt{
           margin-top: 2px;

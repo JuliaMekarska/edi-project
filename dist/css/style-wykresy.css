@@ -130,6 +130,8 @@
       -ms-flex-pack: center;
           justify-content: center;
   color: #222121;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .main {
@@ -138,6 +140,7 @@
 
 .chart {
   margin-left: 3rem;
+  margin-right: 3rem;
   background-color: #f3f3f3;
 }
 
@@ -158,14 +161,19 @@
 .chart-container-box {
   position: relative;
   height: 80% !important;
-  width: 100% !important;
+  max-width: 100% !important;
+  width: 70vw;
+}
+
+.chart-container-bool {
+  width: 40vw;
 }
 
 .chart-container-text {
   text-align: left;
   line-height: 1.2;
-  min-width: 300px;
-  margin-right: 3rem;
+  min-width: 20vw;
+  margin-left: 2rem;
 }
 
 .chart-container-text p {
@@ -177,6 +185,7 @@
   font-size: 1.8rem;
   border-bottom: 2px solid #556B2F;
   padding-bottom: 1rem;
+  margin-right: 2rem;
 }
 
 .chart-container-text dt {

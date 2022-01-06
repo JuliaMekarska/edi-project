@@ -147,6 +147,7 @@ const employment_config = {
     options: {
         responsive: true,
         maintainAspectRatio: false,
+        maxBarThickness: 250,
         scales: {
         }
     }
@@ -184,6 +185,7 @@ const education_config = {
     options: {
         responsive: true,
         maintainAspectRatio: false,
+        maxBarThickness: 250,
         scales: {
         }
     }
