@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" href="../dist/css/style-wykresy.css" />
     <link rel="stylesheet" href="../dist/css/style-navbar-footer.css" />
+    <link rel="stylesheet" href="../dist/css/animation.css"/>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -55,7 +56,11 @@
             </dl>
           </div>
           <div class="chart-container-box">
-            <canvas id="language-chart"></canvas>
+            <canvas id="language-chart">
+            </canvas>
+            <div id="loading1">
+              <div class="lds-hourglass"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -70,7 +75,11 @@
         <div class="chart-container">
           <div class="chart-container-box">
             <canvas id="city-chart"></canvas>
+            <div id="loading2">
+              <div class="lds-hourglass"></div>
+            </div>
           </div>
+          
           <div class="chart-container-text">
             <p>Liczba osób zamieszkujących:</p>
             <dl>
@@ -123,6 +132,9 @@
           </div>
           <div class="chart-container-box chart-container-age">
             <canvas id="age-chart"></canvas>
+            <div id="loading3">
+              <div class="lds-hourglass"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -138,6 +150,9 @@
         <div class="chart-container">
           <div class="chart-container-box">
             <canvas id="work-chart"></canvas>
+            <div  id="loading4">
+              <div class="lds-hourglass"></div>
+            </div>
           </div>
           <div class="chart-container-text">
             <p>Liczba osób:</p>
@@ -175,6 +190,9 @@
           </div>
           <div class="chart-container-box">
             <canvas id="education-chart"></canvas>
+            <div id="loading5">
+              <div class="lds-hourglass"></div>
+            </div>
           </div>
         </div>
       </div>

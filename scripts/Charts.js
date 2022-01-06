@@ -33,26 +33,15 @@ async function loadData() {
       toHtml(is_employed, "work");
       toHtml(education, "edu");
 
-      const pieChartLang = new Chart(
-        document.getElementById("language-chart").getContext("2d"),
-        config.language
-      );
-      const pieChartCity = new Chart(
-        document.getElementById("city-chart").getContext("2d"),
-        config.city
-      );
-      const lineChartAge = new Chart(
-        document.getElementById("age-chart").getContext("2d"),
-        config.age
-      );
-      const barChartEmployed = new Chart(
-        document.getElementById("work-chart").getContext("2d"),
-        config.is_employed
-      );
-      const barChartEducation = new Chart(
-        document.getElementById("education-chart").getContext("2d"),
-        config.education
-      );
+      for (var i = 1;i <=5;i++){
+        document.getElementById(`loading${i}`).innerHTML = ""
+      }
+
+      const pieChartLang = new Chart(document.getElementById("language-chart").getContext("2d"),config.language);
+      const pieChartCity = new Chart(document.getElementById("city-chart").getContext("2d"),config.city);
+      const lineChartAge = new Chart(document.getElementById("age-chart").getContext("2d"),config.age);
+      const barChartEmployed = new Chart(document.getElementById("work-chart").getContext("2d"),config.is_employed);
+      const barChartEducation = new Chart(document.getElementById("education-chart").getContext("2d"),config.education);
     })
     .catch((err) => {
       // Do something for an error here
