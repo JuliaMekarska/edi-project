@@ -50,16 +50,22 @@ $blue : #0A1172;
         text-align: left;
         line-height: 1.2;
         min-width: 300px;
+        margin-right: 3rem;
+
         p{
           margin-top:10px;
           margin-bottom: 10px;
           padding:2px;
           text-align:center;
           font-weight: 700;
+          font-size: 1.8rem;
+          border-bottom: 2px solid $olive;
+          padding-bottom: 1rem;
         }
         dt{
           margin-top: 2px;
           margin-bottom: 3px;
+          font-size: 1.4rem;
         }
         }
   
@@ -67,26 +73,6 @@ $blue : #0A1172;
         height: 100%;
         width: 100%;
         }
-      
-        &-text-swap{
-          display: flex;
-          flex-direction: column;
-          p{
-            margin-right:none;
-            margin-top:10px;
-            margin-bottom: 10px;
-            padding:2px;
-            text-align:center;
-            font-weight: 700;
-          }
-          dt{
-            margin-right: 20rem;
-            margin-top: 2px;
-            margin-bottom: 3px;
-          }
-          dl{
-            align-self: flex-end;
-          }
-        }
+  
     }
 }

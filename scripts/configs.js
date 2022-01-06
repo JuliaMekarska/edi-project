@@ -90,7 +90,7 @@ const city_config = {
 
 const age_data = {labels: age.items,
     datasets: [{
-    label: 'Wiek',
+    label: 'Liczba osób w tym wieku',
     data: age.count,
     backgroundColor: [
         '#ff5400',
