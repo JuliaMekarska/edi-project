@@ -2,7 +2,7 @@ function getData(){
     //============================== JĘZYKI ===========================
     const language_data = {labels: languages.items,
         datasets: [{
-        label: '# of Votes',
+        label: 'Języki',
         data: languages.count,
         backgroundColor: [
            '#7f4f24',
@@ -33,7 +33,10 @@ function getData(){
     const lang_config = {
         type: 'pie',
         data: language_data,
+        
         options: {
+            responsive: true,
+            maintainAspectRatio: false,
             scales: {
             }
         }
@@ -42,7 +45,7 @@ function getData(){
 // ============================== MIASTA =======================================
 const city_data = {labels: city.items,
     datasets: [{
-    label: '# of Votes',
+    label: 'Miasta',
     data: city.count,
     backgroundColor: [
         '#9b9b7a',
@@ -73,7 +76,10 @@ const city_data = {labels: city.items,
 const city_config = {
     type: 'pie',
     data: city_data,
+
     options: {
+        responsive: true,
+        maintainAspectRatio: false,
         scales: {
         }
     }
@@ -84,7 +90,7 @@ const city_config = {
 
 const age_data = {labels: age.items,
     datasets: [{
-    label: 'Occurrences',
+    label: 'Wiek',
     data: age.count,
     backgroundColor: [
         '#ff5400',
@@ -107,6 +113,8 @@ const age_config = {
     type: 'line',
     data: age_data,
     options: {
+        responsive: true,
+        maintainAspectRatio: false,
         scales: {
         }
     }
@@ -118,7 +126,7 @@ const age_config = {
 
 const employment_data = {labels: is_employed.items,
     datasets: [{
-    label: 'Occurrences',
+    label: 'Zatrudnienie',
     data: is_employed.count,
     backgroundColor: [
         '#90a955',
@@ -135,7 +143,10 @@ const employment_data = {labels: is_employed.items,
 const employment_config = {
     type: 'bar',
     data: employment_data,
+
     options: {
+        responsive: true,
+        maintainAspectRatio: false,
         scales: {
         }
     }
@@ -169,7 +180,10 @@ const education_data = {labels: education.items,
 const education_config = {
     type: 'bar',
     data: education_data,
+
     options: {
+        responsive: true,
+        maintainAspectRatio: false,
         scales: {
         }
     }
