@@ -143,6 +143,10 @@
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 2px solid #556B2F;
+  border-bottom: 2px solid #556B2F;
 }
 
 .age-table-container {

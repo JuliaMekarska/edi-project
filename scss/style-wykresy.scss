@@ -32,6 +32,10 @@ $blue : #0A1172;
 .age-grid{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 2px solid $olive;
+  border-bottom: 2px solid $olive;
 }
 
 .age-table-container{
