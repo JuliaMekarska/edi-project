@@ -32,6 +32,7 @@ async function loadData() {
       toHtml(city, "city");
       toHtml(is_employed, "work");
       toHtml(education, "edu");
+      toHtml2(age)
 
       for (var i = 1;i <=5;i++){
         document.getElementById(`loading${i}`).innerHTML = ""

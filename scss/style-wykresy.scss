@@ -28,6 +28,20 @@ $blue : #0A1172;
 .main{
   background-color: $light;
 }
+
+.age-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.age-table-container{
+  margin-left: 0 !important;
+  cursor: pointer;
+  .table-item{
+    font-weight: 700;
+  }
+}
+
 .chart {
   margin-left: 3rem;
   margin-right: 3rem;

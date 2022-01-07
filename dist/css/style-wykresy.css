@@ -138,6 +138,22 @@
   background-color: #f3f3f3;
 }
 
+.age-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.age-table-container {
+  margin-left: 0 !important;
+  cursor: pointer;
+}
+
+.age-table-container .table-item {
+  font-weight: 700;
+}
+
 .chart {
   margin-left: 3rem;
   margin-right: 3rem;

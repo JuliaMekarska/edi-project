@@ -68,7 +68,7 @@ function sortList(array){
     while(next){
         var skip = true;
         for (var i = 0; i < item_count.length; i++){
-            if (unique_items[i] < unique_items[i+1]){
+            if (unique_items[i] > unique_items[i+1]){
                 temp = unique_items[i]
                 unique_items[i] = unique_items[i+1]
                 unique_items[i+1] = temp
