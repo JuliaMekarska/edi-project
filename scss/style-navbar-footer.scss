@@ -1,7 +1,7 @@
 
  @import url('http://fonts.googleapis.com/css?family=Oxygen&subset=latin,latin-ext');
 
-$olive : #d4dfc0;
+$olive : #636130;
 $light : #f3f3f3;
 $dark : #222121;
 $blue : #0A1172;
@@ -55,9 +55,7 @@ $blue : #0A1172;
     justify-content: space-between;
     align-items: center;
     width:  100%;
-    height: 80px;
-    position:relative;
-    
+    min-height: calc(100vh - 770px);
     
     &_menu {
         @extend %align-center;
@@ -84,18 +82,26 @@ $blue : #0A1172;
         padding:0;
         p{
             text-align: center;
-            margin-top:10px;
+            margin-top:  5px;
             padding:2px;
             font-weight: 700;
         }
         dt{
             margin-top: 2px;
             margin-bottom: 3px;
+            a{
+                color: $dark;
+                @extend %align-center;
+                justify-content: center;
+                text-decoration:solid;
+                padding: 0 2rem;
+                
 
-            &:hover {
-                color: $olive;
-                transition: all 0.3s ease;
-            }
+                &:hover {
+                    color: $olive;
+                    transition: all 0.3s ease;
+                }
+        }
         }
         
       }  

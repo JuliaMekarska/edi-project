@@ -47,7 +47,7 @@
 }
 
 .navbar--link:hover {
-  color: #d4dfc0;
+  color: #636130;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -64,8 +64,7 @@
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 80px;
-  position: relative;
+  min-height: calc(100vh - 770px);
 }
 
 .footer_menu {
@@ -84,7 +83,7 @@
 }
 
 .footer--link:hover {
-  color: #d4dfc0;
+  color: #636130;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -100,7 +99,7 @@
 
 .footer .col p {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 5px;
   padding: 2px;
   font-weight: 700;
 }
@@ -111,7 +110,7 @@
 }
 
 .footer .col dt:hover {
-  color: #d4dfc0;
+  color: #636130;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -135,7 +134,7 @@
 }
 
 .main {
-  background-color: #f3f3f3;
+  background-image: url(brushed_alu.png);
 }
 
 .age-grid {
@@ -145,8 +144,8 @@
       grid-template-columns: 1fr 1fr;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-top: 2px solid #556B2F;
-  border-bottom: 2px solid #556B2F;
+  border-top: 2px solid #636130;
+  border-bottom: 2px solid #636130;
 }
 
 .age-table-container {
@@ -161,7 +160,7 @@
 .chart {
   margin-left: 3rem;
   margin-right: 3rem;
-  background-color: #f3f3f3;
+  background-image: url(brushed_alu.png);
 }
 
 .chart-container {
@@ -203,7 +202,7 @@
   text-align: center;
   font-weight: 700;
   font-size: 1.8rem;
-  border-bottom: 2px solid #556B2F;
+  border-bottom: 2px solid #636130;
   padding-bottom: 1rem;
   margin-right: 2rem;
 }
