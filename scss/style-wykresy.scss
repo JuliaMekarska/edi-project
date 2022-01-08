@@ -71,6 +71,7 @@ $blue : #0A1172;
         height: 90vh;
         z-index:1;
         width: 100%;
+        background-image: url(brushed_alu.png);
         
         @media (max-width:640px){
           flex-direction: column;
