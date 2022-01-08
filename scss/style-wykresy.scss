@@ -3,7 +3,7 @@
 
 @import url('http://fonts.googleapis.com/css?family=Oxygen&subset=latin,latin-ext');
 
-$olive : #556B2F;
+$olive : #636130;
 $light : #f3f3f3;
 $dark : #222121;
 $blue : #0A1172;
@@ -31,7 +31,7 @@ $blue : #0A1172;
     
 }
 .main{
-  background-color: $light;
+  background-image: url(brushed_alu.png);
 }
 
 .age-grid{
@@ -61,7 +61,7 @@ $blue : #0A1172;
     margin-right: 1rem;
   }
   
-  background-color: $light;
+  background-image: url(brushed_alu.png);
   
     &-container {
         display:flex;

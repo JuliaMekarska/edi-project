@@ -1,5 +1,5 @@
 @import url("http://fonts.googleapis.com/css?family=Oxygen&subset=latin,latin-ext");
-.navbar_logo, .navbar_menu, .navbar--link, .footer_menu, .footer--link {
+.navbar_logo, .navbar_menu, .navbar--link, .footer_menu, .footer--link, .footer .col dt a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,7 +46,7 @@
 }
 
 .navbar--link:hover {
-  color: #d4dfc0;
+  color: #636130;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -63,8 +63,12 @@
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+<<<<<<< HEAD
   height: 100%;
   position: relative;
+=======
+  min-height: calc(100vh - 800px);
+>>>>>>> abebd3ced1b65247d6ab6fc0103f29855fc08ec2
 }
 
 @media (max-width: 575px) {
@@ -92,7 +96,7 @@
 }
 
 .footer--link:hover {
-  color: #d4dfc0;
+  color: #636130;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -108,7 +112,7 @@
 
 .footer .col p {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 5px;
   padding: 2px;
   font-weight: 700;
 }
@@ -118,8 +122,18 @@
   margin-bottom: 3px;
 }
 
-.footer .col dt:hover {
-  color: #d4dfc0;
+.footer .col dt a {
+  color: #222121;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+  padding: 0 2rem;
+}
+
+.footer .col dt a:hover {
+  color: #636130;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }

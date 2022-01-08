@@ -1,198 +1,185 @@
-function getData(){
-    //============================== JĘZYKI ===========================
-    const language_data = {labels: languages.items,
-        datasets: [{
-        label: 'Języki',
+function getData() {
+  //============================== JĘZYKI ===========================
+  const language_data = {
+    labels: languages.items,
+    datasets: [
+      {
+        label: "Języki",
         data: languages.count,
         backgroundColor: [
-           '#7f4f24',
-           '#936639',
-           '#a68a64',
-           '#c2c5aa',
-           '#a4ac86',
-           '#656d4a',
-           '#414833'
-
-
+          "#FFD878",
+          "#FFB368",
+          "#EB7360",
+          "#FF8A91",
+          "#FFD3AA",
+          "#FF8422",
+          "#FFB5B9",
         ],
         borderColor: [
-            '582f0e',
-            '#7f4f24',
-            '#936639',
-            '#a68a64',
-            '#656d4a',
-            '#414833',
-            '#333d29'
-
-            
+          "#FFC43C",
+          "#FF9A4A",
+          "#FF6E64",
+          "#FF5E74",
+          "#FFB77A",
+          "#FF6B00",
+          "#FF8C90",
         ],
-        borderWidth: 2
-        }]
-    }
-    
-    const lang_config = {
-        type: 'pie',
-        data: language_data,
-        
-        options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            scales: {
-            }
-        }
-    }
-//================================================================================
-// ============================== MIASTA =======================================
-const city_data = {labels: city.items,
-    datasets: [{
-    label: 'Miasta',
-    data: city.count,
-    backgroundColor: [
-        '#9b9b7a',
-        '#baa587',
-        '#d9ae94',
-        '#f1dca7',
-        '#ffcb69',
-        '#e8ac65',
-        '#d08c60',
-        '#b58463',
-        '#997b66'
+        borderWidth: 2,
+      },
     ],
-    borderColor: [
-        '#5e503f',
-        '#9b9b7a',
-        '#baa587',
-        '#d9ae94',
-        '#e8ac65',
-        '#d08c60',
-        '#b58463',
-        '#774936'
-        
-    ],
-    borderWidth: 2
-    }]
-}
+  };
 
-const city_config = {
-    type: 'pie',
+  const lang_config = {
+    type: "pie",
+    data: language_data,
+
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {},
+    },
+  };
+  //================================================================================
+  // ============================== MIASTA =======================================
+  const city_data = {
+    labels: city.items,
+    datasets: [
+      {
+        label: "Miasta",
+        data: city.count,
+        backgroundColor: [
+          "#C1E7FD",
+          "#1D85F5",
+          "#515AE0",
+          "#72BBFF",
+          "#7B94C7",
+          "#73C1CC",
+          "#2C4885",
+          "#4978E0",
+          "#CFD9FA",
+        ],
+        borderColor: [
+          "#A5DBFD",
+          "#007AF5",
+          "#414AE0",
+          "#54A1FF",
+          "#6D88C7",
+          "#50C4CC",
+          "#1E3D85",
+          "#2D60E0",
+          "#B5C7F8",
+        ],
+        borderWidth: 2,
+      },
+    ],
+  };
+
+  const city_config = {
+    type: "pie",
     data: city_data,
 
     options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        scales: {
-        }
-    }
-}
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {},
+    },
+  };
 
-//=======================================================================
-//============================ WIEK =====================================
+  //=======================================================================
+  //============================ WIEK =====================================
 
-const age_data = {labels: age.items,
-    datasets: [{
-    label: 'Liczba osób w tym wieku',
-    data: age.count,
-    backgroundColor: [
-        '#ff5400',
-        '#7400b8',
-        '#00b4d8',
-        '#ef476f',
-        '#caffbf',
-        '#d4a276',
-        '#ffd60a'
-
+  const age_data = {
+    labels: age.items,
+    datasets: [
+      {
+        label: "Liczba osób w tym wieku",
+        data: age.count,
+        backgroundColor: [
+          "#ff5400",
+          "#7400b8",
+          "#00b4d8",
+          "#ef476f",
+          "#caffbf",
+          "#d4a276",
+          "#ffd60a",
+        ],
+        borderColor: ["#2B4480"],
+        borderWidth: 2,
+      },
     ],
-    borderColor: [
-        '#03045e',
-    ],
-    borderWidth: 2
-    }]
-}
+  };
 
-const age_config = {
-    type: 'line',
+  const age_config = {
+    type: "line",
     data: age_data,
     options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        scales: {
-        }
-    }
-}
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {},
+    },
+  };
 
-//=====================================================================
-//=============================== Zatrudnienie =========================
+  //=====================================================================
+  //=============================== Zatrudnienie =========================
 
-
-const employment_data = {labels: is_employed.items,
-    datasets: [{
-    label: 'Zatrudnienie',
-    data: is_employed.count,
-    backgroundColor: [
-        '#90a955',
-        '#31572c'
+  const employment_data = {
+    labels: is_employed.items,
+    datasets: [
+      {
+        label: "Zatrudnienie",
+        data: is_employed.count,
+        backgroundColor: ["#8EC7E0", "#FF7C72"],
+        borderColor: ["#74BCE0", "#FF584C"],
+        borderWidth: 2,
+      },
     ],
-    borderColor: [
-        '#4f772d',
-        '#132a13'
-    ],
-    borderWidth: 2
-    }]
-}
+  };
 
-const employment_config = {
-    type: 'bar',
+  const employment_config = {
+    type: "bar",
     data: employment_data,
 
     options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        maxBarThickness: 250,
-        scales: {
-        }
-    }
-}
+      responsive: true,
+      maintainAspectRatio: false,
+      maxBarThickness: 250,
+      scales: {},
+    },
+  };
 
+  //=====================================================================
+  //=============================== Edukacja =========================
 
-//=====================================================================
-//=============================== Edukacja =========================
-
-
-const education_data = {labels: education.items,
-    datasets: [{
-    label: 'Wykształcenie',
-    data: education.count,
-    backgroundColor: [
-        '#d5896f',
-        '#dab785',
-        '#70a288',
-        '#04395e'
+  const education_data = {
+    labels: education.items,
+    datasets: [
+      {
+        label: "Wykształcenie",
+        data: education.count,
+        backgroundColor: ["#FF9D87", "#F5E38F", "#78E076", "#80DDFF"],
+        borderColor: ["#FF7B5D", "#F5D960", "#54E051", "#67D2FF"],
+        borderWidth: 2,
+      },
     ],
-    borderColor: [
-        '#f15152',
-        '#edb183',
-        '#566e3d',
-        '#031d44'
-    ],
-    borderWidth: 2
-    }]
-}
+  };
 
-const education_config = {
-    type: 'bar',
+  const education_config = {
+    type: "bar",
     data: education_data,
 
     options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        maxBarThickness: 250,
-        scales: {
-        }
-    }
-}
+      responsive: true,
+      maintainAspectRatio: false,
+      maxBarThickness: 250,
+      scales: {},
+    },
+  };
 
-
-
-
-    return {"language":lang_config,"city":city_config,"age":age_config,"is_employed":employment_config,"education":education_config}
+  return {
+    language: lang_config,
+    city: city_config,
+    age: age_config,
+    is_employed: employment_config,
+    education: education_config,
+  };
 }
