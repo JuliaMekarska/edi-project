@@ -23,6 +23,11 @@ $blue : #0A1172;
     color:$dark;
     margin-left: 3rem;
     margin-right: 3rem;
+
+    @media (max-width:820px){
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
     
 }
 .main{
@@ -49,6 +54,12 @@ $blue : #0A1172;
 .chart {
   margin-left: 3rem;
   margin-right: 3rem;
+  margin-top: 2rem;
+
+  @media (max-width:820px){
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
   
   background-color: $light;
   
@@ -59,13 +70,28 @@ $blue : #0A1172;
         margin:0 auto;
         height: 90vh;
         z-index:1;
-        width: 100%;  
+        width: 100%;
+        
+        @media (max-width:640px){
+          flex-direction: column;
+        }
 
         &-box{
           position: relative;
           height: 80% !important; 
           max-width: 100% !important;
           width: 70vw;
+
+          
+        @media (max-width:820px){
+          height: 50% !important;
+        }
+        }
+
+        &-swap{
+          @media (max-width:820px){
+            flex-direction: column-reverse;;
+          }
         }
 
         &-bool{
@@ -78,6 +104,10 @@ $blue : #0A1172;
         line-height: 1.2;
         min-width: 20vw;
         margin-left:2rem;
+
+        @media (max-width:820px){
+          margin-left: 0;
+        }
         
 
         p{
@@ -89,7 +119,7 @@ $blue : #0A1172;
           font-size: 1.8rem;
           border-bottom: 2px solid $olive;
           padding-bottom: 1rem;
-          margin-right:2rem;
+          
         }
         dt{
           margin-top: 2px;

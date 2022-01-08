@@ -55,9 +55,12 @@ $blue : #0A1172;
     justify-content: space-between;
     align-items: center;
     width:  100%;
-    height: 80px;
+    height: 100%;
     position:relative;
     
+    @media(max-width:575px){
+        flex-direction: column;
+    }
     
     &_menu {
         @extend %align-center;
