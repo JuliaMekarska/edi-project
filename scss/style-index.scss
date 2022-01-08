@@ -64,6 +64,12 @@ $blue : #0A1172;
           &--right {
             text-align:right;
             display: flex;
+
+            @media (max-width:820px){
+              flex-direction: column;
+              flex-shrink: 3;
+            }
+
           }
           
           &--img {

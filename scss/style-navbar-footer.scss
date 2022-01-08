@@ -24,8 +24,9 @@ $blue : #0A1172;
         color: $dark;
         text-decoration: none;
         font-size: 1.5rem;
-        margin-left: 24 px;
+        margin-left: 24px;
         @extend %align-center;
+        
 
     }
     &_menu {
@@ -55,16 +56,12 @@ $blue : #0A1172;
     justify-content: space-between;
     align-items: center;
     width:  100%;
-<<<<<<< HEAD
-    height: 100%;
+    height: fit-content;
     position:relative;
     
     @media(max-width:575px){
         flex-direction: column;
     }
-=======
-    min-height: calc(100vh - 800px);
->>>>>>> abebd3ced1b65247d6ab6fc0103f29855fc08ec2
     
     &_menu {
         @extend %align-center;
