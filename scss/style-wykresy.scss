@@ -55,13 +55,12 @@ $blue : #0A1172;
   margin-left: 3rem;
   margin-right: 3rem;
   margin-top: 2rem;
+  background-image: url(brushed_alu.png);
 
   @media (max-width:820px){
     margin-left: 1rem;
     margin-right: 1rem;
   }
-  
-  background-image: url(brushed_alu.png);
   
     &-container {
         display:flex;
