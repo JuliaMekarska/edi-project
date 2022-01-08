@@ -63,7 +63,7 @@
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  min-height: calc(100vh - 770px);
+  min-height: calc(100vh - 800px);
 }
 
 .footer_menu {
